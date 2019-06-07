@@ -13,9 +13,12 @@ public class Cart {
 	public void addProduct(Product product) {
 		this.products.add(product);
 	}
-	
 	public void removeitem(Product product) {
 		this.products.remove(product);   //***10 ADDED A BEHAVIOUR TO REMOVE ITEM  
 	}
-
+	public void add(Product product) {
+		this.products.add(product);   //***11 ADDED A BEHAVIOUR TO ADD ITEM  
+	}
+	
+	
 }
