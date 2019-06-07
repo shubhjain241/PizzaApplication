@@ -4,7 +4,16 @@ package in.ac.sharda.pizzaapplication.domain;
 public class Product {
 
 	private final int id;
-	private int price;
+	private int price,calories;  // 3.) A NEW FEILD NAMED AS CALORIES
+	public int getCalories() {
+		return calories;
+	}
+	// 3.) NEW GETTER AND SETTER CREATED
+	public void setCalories(int calories) {
+		this.calories = calories;
+	}
+
+
 	private String name,description;
 	
 	// GETTERS AND SETTER BECAUSE "PRIVATE"
