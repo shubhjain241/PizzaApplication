@@ -18,13 +18,17 @@ public class CartController {
 	public void addProduct(Product product) {
 		this.products.add(product);
 	}
-	//*** ADDED A BEHAVIOUR MAPPING IN CARTCONTROLLER TO REMOVE ITEMS FROM THE CART
+	//*** 6.) ADDED A BEHAVIOUR MAPPING IN CARTCONTROLLER TO REMOVE ITEMS FROM THE CART
 	@GetMapping("/remove/list")
 	public void removeProduct(Product product)
 	{
 		products.remove(product);
 	}
+
+	@GetMapping("/count/list")
+	public int count()
+	{
+		return products.size();
+	}
 	
-	
-	  
-}
+}  
